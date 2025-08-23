@@ -1,0 +1,3 @@
+[33m5252dbf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add netlify.toml configuration for proper Next.js deployment
+[33m6d23558[m Fix: Add browser environment checks to GlowCard component to resolve SSR issues
+[33mf4a7fda[m Refactor: Replace SimpleCard with GlowCard in Education and Experience components, and convert Home component to async for improved data fetching
