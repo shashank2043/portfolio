@@ -4,8 +4,18 @@ import { useEffect } from 'react';
 
 const GlowCard = ({ children , identifier}) => {
   useEffect(() => {
+    // Check if we're in the browser environment
+    if (typeof window === 'undefined' || typeof document === 'undefined') {
+      return;
+    }
+
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+
+    // Check if elements exist
+    if (!CONTAINER || !CARDS.length) {
+      return;
+    }
 
     const CONFIG = {
       proximity: 40,
@@ -47,16 +57,20 @@ const GlowCard = ({ children , identifier}) => {
       }
     };
 
-    document.body.addEventListener('pointermove', UPDATE);
+    if (document.body) {
+      document.body.addEventListener('pointermove', UPDATE);
+    }
 
     const RESTYLE = () => {
-      CONTAINER.style.setProperty('--gap', CONFIG.gap);
-      CONTAINER.style.setProperty('--blur', CONFIG.blur);
-      CONTAINER.style.setProperty('--spread', CONFIG.spread);
-      CONTAINER.style.setProperty(
-        '--direction',
-        CONFIG.vertical ? 'column' : 'row'
-      );
+      if (CONTAINER) {
+        CONTAINER.style.setProperty('--gap', CONFIG.gap);
+        CONTAINER.style.setProperty('--blur', CONFIG.blur);
+        CONTAINER.style.setProperty('--spread', CONFIG.spread);
+        CONTAINER.style.setProperty(
+          '--direction',
+          CONFIG.vertical ? 'column' : 'row'
+        );
+      }
     };
 
     RESTYLE();
@@ -64,7 +78,9 @@ const GlowCard = ({ children , identifier}) => {
 
     // Cleanup event listener
     return () => {
-      document.body.removeEventListener('pointermove', UPDATE);
+      if (document.body) {
+        document.body.removeEventListener('pointermove', UPDATE);
+      }
     };
   }, [identifier]);
 
