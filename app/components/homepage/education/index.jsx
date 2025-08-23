@@ -1,11 +1,10 @@
-"use client";
-
+// @flow strict
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
-import SimpleCard from "../../helper/simple-card";
+import GlowCard from "../../helper/glow-card";
 
 function Education() {
   return (
@@ -45,7 +44,7 @@ function Education() {
             <div className="flex flex-col gap-6">
               {
                 educations.map(education => (
-                  <SimpleCard key={education.id}>
+                  <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
                       <Image
                         src="/blur-23.svg"
@@ -71,7 +70,7 @@ function Education() {
                         </div>
                       </div>
                     </div>
-                  </SimpleCard>
+                  </GlowCard>
                 ))
               }
             </div>
