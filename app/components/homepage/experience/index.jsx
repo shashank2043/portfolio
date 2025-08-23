@@ -5,7 +5,12 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
 import AnimationLottie from "../../helper/animation-lottie";
-import GlowCard from "../../helper/glow-card";
+import dynamic from "next/dynamic";
+
+const GlowCard = dynamic(() => import("../../helper/glow-card"), {
+  ssr: false,
+  loading: () => <div className="p-3 relative bg-gradient-to-r from-[#0d1224] to-[#0a0d37] rounded-lg border border-[#1b2c68a0]"></div>
+});
 
 function Experience() {
   return (
