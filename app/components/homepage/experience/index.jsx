@@ -5,12 +5,7 @@ import Image from "next/image";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
 import AnimationLottie from "../../helper/animation-lottie";
-import dynamic from "next/dynamic";
-
-const GlowCard = dynamic(() => import("../../helper/glow-card"), {
-  ssr: false,
-  loading: () => <div className="p-3 relative bg-gradient-to-r from-[#0d1224] to-[#0a0d37] rounded-lg border border-[#1b2c68a0]"></div>
-});
+import SimpleCard from "../../helper/simple-card";
 
 function Experience() {
   return (
@@ -45,7 +40,7 @@ function Experience() {
             <div className="flex flex-col gap-6">
               {
                 experiences.map(experience => (
-                  <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
+                  <SimpleCard key={experience.id}>
                     <div className="p-3 relative">
                       <Image
                         src="/blur-23.svg"
@@ -73,7 +68,7 @@ function Experience() {
                         </div>
                       </div>
                     </div>
-                  </GlowCard>
+                  </SimpleCard>
                 ))
               }
             </div>
