@@ -82,8 +82,13 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
-
+import nodejs from '../app/assets/svg/skills/nodejs.svg'
+import express from '../app/assets/svg/skills/expressjs.svg'
+import render from '../app/assets/svg/skills/render-logo.png'
+import postman from '../app/assets/svg/skills/postman.svg'
+import vercel from '../app/assets/svg/skills/vercel.svg'
+import aftereffects from '../app/assets/svg/skills/aftereffects.png'
+import n8n from '../app/assets/svg/skills/n8n.png'
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
@@ -254,6 +259,24 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'node js':
+      return nodejs;
+    case 'nodejs':
+      return nodejs;
+    case 'express':
+      return express;
+    case 'express.js':
+      return express;
+    case 'render':
+      return render;
+    case 'postman':
+      return postman;
+    case 'vercel':
+      return vercel;
+    case 'after effects':
+      return aftereffects;
+    case 'n8n':
+      return n8n;
     default:
       break;
   }
