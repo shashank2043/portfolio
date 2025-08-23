@@ -5,12 +5,11 @@ import "react-toastify/dist/ReactToastify.css";
 import Footer from "./components/footer";
 import ScrollToTop from "./components/helper/scroll-to-top";
 import Navbar from "./components/navbar";
-import "./css/card.scss";
-import "./css/globals.scss";
+import "./css/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of Aravind Pulluri - Software Developer",
+  title: "Portfolio of Aravind Pulluri",
   description:
     "This is the portfolio of Aravind Pulluri. I am a full stack developer and a self taught developer. I love to learn new things and I am always open to collaborating with others. I am a quick learner and I am always looking for new challenges.",
 };

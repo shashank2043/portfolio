@@ -92,11 +92,6 @@ function ProjectCard({ project }) {
           </div>
         </div>
         
-        <div className="mb-4">
-          <h3 className="text-white font-semibold mb-2">Role:</h3>
-          <p className="text-[#16f2b3]">{project.role}</p>
-        </div>
-        
         <div>
           <h3 className="text-white font-semibold mb-2">Description:</h3>
           <p className="text-gray-300 text-sm leading-relaxed">{project.description}</p>

@@ -6,7 +6,7 @@ export const projectsData = [
         tools: ['TypeScript', 'React', 'AI APIs', 'Geolocation', 'Image Processing'],
         role: 'Full Stack Developer',
         code: 'https://github.com/aravindpulluri116/CiviGuard-AI',
-        demo: '',
+        demo: 'https://github.com/aravindpulluri116/CiviGuard-AI',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const projectsData = [
         tools: ['TypeScript', 'Gemini APIs', 'GPT', 'Resume Parsing', 'ATS Optimization'],
         role: 'AI Developer',
         code: 'https://github.com/aravindpulluri116/ATS-Raiser-AI',
-        demo: '',
+        demo: 'https://ats-raiser-ai-aravind.vercel.app/',
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ export const projectsData = [
         tools: ['TypeScript', 'Data Analysis', 'Trend Analysis', 'College Prediction'],
         code: 'https://github.com/aravindpulluri116/EAMCET-College-Predictor',
         role: 'Data Analyst',
-        demo: '',
+        demo: 'https://eamcet-college-predictor-aravind.vercel.app/',
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ export const projectsData = [
         description: "Developed a full-stack food ordering app with authentication, item listings, and Stripe-based payments. Built using MongoDB, Express, React, Node.js with real-time updates and responsive UI. The platform provides a seamless food ordering experience with secure payment processing and real-time order tracking.",
         tools: ['TypeScript', 'MERN Stack', 'CashFree API', 'MongoDB', 'Express', 'React', 'Node.js'],
         code: 'https://github.com/aravindpulluri116/FoodiesHub',
-        demo: '',
+        demo: 'https://foodieshub-two.vercel.app/',
         role: 'Full Stack Developer',
     },
     {
@@ -41,7 +41,7 @@ export const projectsData = [
         description: "Platform for students to upload and access academic resources like notes and previous year papers. Enabled filtering by semester, subject, and type of material. The platform facilitates knowledge sharing among students and provides easy access to educational resources.",
         tools: ['TypeScript', 'React', 'File Management', 'Filtering System'],
         code: 'https://github.com/aravindpulluri116/StudyShare',
-        demo: '',
+        demo: 'https://study-share-nu.vercel.app/',
         role: 'Frontend Developer',
     },
     {
