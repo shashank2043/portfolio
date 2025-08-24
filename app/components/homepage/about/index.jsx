@@ -27,7 +27,7 @@ function AboutSection() {
             src={personalData.profile}
             width={400}
             height={400}
-            alt="Pulluri Aravind"
+            alt="Pulluri Shashank"
             className="w-full max-w-md h-auto rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
         </div>
