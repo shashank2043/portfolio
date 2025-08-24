@@ -26,7 +26,7 @@ function Navbar() {
           <Link
             href="/"
             className=" text-[#16f2b3] text-3xl font-bold">
-            Pulluri Aravind
+            Pulluri Shashank
           </Link>
         </div>
 
