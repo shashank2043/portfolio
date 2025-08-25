@@ -17,6 +17,15 @@ export const projectsData = [
         code: 'https://github.com/shashank2043/aichatbot',
         demo: 'https://aichatbot-ivory-beta.vercel.app/',
     },
+    {
+       id: 3,
+        name: 'Finance Tracker',
+        description: 'A comprehensive finance tracking app built with the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to manage their expenses, set budgets, and visualize their financial health through interactive charts and reports.',
+        tools: ['MongoDB', 'Express', 'React', 'Node', 'TypeScript'],
+        role: 'MERN Stack Developer',
+        code: 'https://github.com/shashank2043/FinMan',
+        demo: 'https://github.com/shashank2043/FinMan', 
+    }
 ];
 
 
